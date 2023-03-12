@@ -1,0 +1,20 @@
+body {
+  background-color: silver;
+}
+
+#para1 {
+  background-color: aqua;
+}
+
+.para2 {
+  background-color: lightgreen;
+}
+
+p {
+  background-color: orange;
+}
+
+h1 {
+  background-color: yellow;
+  color: red;
+}
