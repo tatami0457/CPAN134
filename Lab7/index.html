@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body img {
+      max-width: 400px;
+      max-height: 350px;
+      display: none;
+    }
+  </style>
+  <body>
+    <div>
+      <button id="button1">Christmas</button>
+      <button id="button2">Halloween</button>
+      <button id="button3">Easter</button>
+      <br /><br />
+    </div>
+
+    <img id="img1" src="./christmas.jpg" alt="Christmas" />
+    <img id="img2" src="./halloween.jpg" alt="Halloween" />
+    <img id="img3" src="./easter-eggs.jpg" alt="Easter" />
+
+    <script>
+      const christmasButton = document.getElementById("button1");
+      const halloweenButton = document.getElementById("button2");
+      const easterButton = document.getElementById("button3");
+
+      const christmasImg = document.getElementById("img1");
+      const halloweenImg = document.getElementById("img2");
+      const easterImg = document.getElementById("img3");
+
+      christmasButton.addEventListener("click", () => {
+        christmasImg.style.display = "block";
+        halloweenImg.style.display = "none";
+        easterImg.style.display = "none";
+      });
+
+      halloweenButton.addEventListener("click", () => {
+        christmasImg.style.display = "none";
+        halloweenImg.style.display = "block";
+        easterImg.style.display = "none";
+      });
+
+      easterButton.addEventListener("click", () => {
+        christmasImg.style.display = "none";
+        halloweenImg.style.display = "none";
+        easterImg.style.display = "block";
+      });
+    </script>
+  </body>
+</html>
