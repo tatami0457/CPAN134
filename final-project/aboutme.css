@@ -109,11 +109,10 @@ body {
 }
 
 .text {
-  width: 650px;
+  max-width: 650px;
   color: white;
   padding: 5px;
   font-size: 22px;
-
   margin: 20px 0;
 }
 
