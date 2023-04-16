@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(29, 132, 147, 0.5);
+}
+
+/* navigation bar */
+.navbar {
+  background-color: #1d8493;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-item a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: #ffcc00;
+}
+
+/* sign in and log out button */
+.navbar .signIn {
+  padding: 3px 15px;
+  background-color: rgb(197, 178, 163);
+  font-weight: bold;
+  position: absolute;
+  right: 25%;
+  border: none;
+  border-radius: 10px;
+}
+
+.navbar .logOut {
+  display: none;
+  padding: 3px 15px;
+  background-color: rgb(197, 178, 163);
+  font-weight: bold;
+  position: absolute;
+  right: 25%;
+  border: none;
+  border-radius: 10px;
+}
+
+.navbar .helloSpan {
+  position: absolute;
+  top: 1.8%;
+  right: 10%;
+  border: none;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Image and text */
+section img {
+  width: 920px;
+  height: auto;
+  margin: 10px;
+}
+
+section .container {
+  display: flex;
+  margin: auto;
+}
+
+section .text-container {
+  text-align: center;
+  align-items: center;
+  padding: 3rem 50px;
+}
+
+section .text-container h2 {
+  font-size: 2.5rem;
+  padding: 15px 0;
+}
+
+section .text-container p {
+  font-size: 130%;
+}
+
+/* scorll up button */
+
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: 2px solid #334461b9;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+#scrollBtn img {
+  background-image: url("goup.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-right: 15px;
+  padding-bottom: 12px;
+  width: 30px;
+  height: 30px;
+}
+
+#scrollBtn:hover {
+  background-color: #342a2a;
+}
+
+/* model */
+/*  Sign in Button contain  */
+.model {
+  display: none;
+  position: fixed;
+  top: 6.55%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.model h2 {
+  text-align: center;
+  background-color: rgba(250, 250, 250, 0.3);
+  padding-bottom: 20px;
+}
+
+.model form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.model form .emailContainer,
+.firstNameContainer,
+.lastNameContainer,
+.phoneContainer,
+.buttonContainer {
+  display: block;
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+.model label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  background-color: white;
+  font-weight: bold;
+}
+
+.model input {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.model .required {
+  color: red;
+  margin-bottom: 5px;
+  background-color: white;
+  font-weight: bold;
+}
+
+.model button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.model button:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+/* close button */
+.close {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 20px;
+  right: 28%;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: #14b6c1e0;
+}
+
+.footer-container {
+  background-color: #342a2a;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons img {
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.8);
+}
+
+.copyright {
+  padding-left: 10px;
+  color: rgb(235, 224, 224);
+  font-size: 130%;
+}

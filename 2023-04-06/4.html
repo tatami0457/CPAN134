@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Local Stroge demo</h1>
+    <form action="infolocal.html">
+      First name: <input type="text" id="fn" name="fn" /> <br /><br />
+      Last name: <input type="text" id="ln" name="ln" /> <br /><br />
+      Passwork: <input type="text" id="pw" name="pw" /> <br /><br />
+      <button onclick="saveInfo()">Save info</button>
+      <button onclick="retrieveInfo()">Retrieve Info</button>
+      <button onclick="removeInfo()">Remove Info</button>
+    </form>
+
+    <script>
+      function saveInfo() {
+        let firstName = document.getElementById("fn").value;
+        let lastName = document.getElementById("ln").value;
+        localStorage.setItem("f1", firstName);
+        localStorage.setItem("l1", lastName);
+        let fullName = firstName + " " + lastName;
+        localStorage.setItem("fullName", fullName);
+      }
+
+      function retrieveInfo() {
+        document.getElementById("fn").value = localStorage.getItem(
+          "f1",
+          firstName
+        );
+        document.getElementById("ln").value = localStorage.getItem(
+          "l1",
+          lastName
+        );
+        document.getElementById("fullName").value = localStorage.getItem(
+          "fullName",
+          fullName
+        );
+      }
+
+      function removeInfo() {
+        localStorage.removeItem("f1");
+        localStorage.removeItem("l1");
+      }
+    </script>
+  </body>
+</html>

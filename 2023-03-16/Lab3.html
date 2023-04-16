@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab3</title>
+  </head>
+  <body>
+    <label for="myDate">Choose a Date:</label>
+    <input type="date" name="myDate" id="myDate" />
+    <br /><br /><br />
+
+    <label for="myChoice">Choose a number between 10 and 20:</label>
+    <input type="number" name="myChoice" id="myChoice" min="10" max="20" />
+    <br /><br /><br />
+
+    <label for="course">Favorite Course:</label>
+    <input type="text" name="course" id="course" list="Course" />
+    <datalist id="Course">
+      <option value="CPAN133" label="CPAN133"></option>
+      <option value="CPAN134" label="CPAN134"></option>
+      <option value="CPAN116" label="CPAN116"></option>
+    </datalist>
+    <br /><br /><br />
+
+    Email: <input type="email" name="email" id="email" maxlength="30" />
+    <br /><br /><br />
+
+    Phone Number: <input type="tel" id="tel" maxlength="10" />
+    <br /><br /><br />
+
+    <input type="submit" name="myButton" id="myButton" value="Submit" />
+    <input type="reset" name="myResetButton" id="myResetButton" value="Reset" />
+    <br /><br />
+  </body>
+</html>

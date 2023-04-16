@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link rel="stylesheet" href="./services.css" />
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <div class="navigationBar">
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="main.html">Home</a></li>
+          <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="active" href="#">Services</a></li>
+          <li class="nav-item"><a href="aboutme.html">About Me</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+
+          <!-- sign in and log out button -->
+          <li><button class="signIn" id="signInButton">Sign in</button></li>
+          <li><button class="logOut" id="logOutButton">Log out</button></li>
+          <li><span class="helloSpan"></span></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+      <div class="main-content-img-container">
+        <div class="container">
+          <!-- backgroung image -->
+          <div class="main-img">
+            <img src="./pictures/service_pic1.jpg" alt="picture1" />
+          </div>
+          <!-- Content -->
+          <div class="main-content">
+            <div class="line">
+              <h2>I provide top quality services</h2>
+              <p>
+                <br /><br />
+                Business Portrail / Business Headshot Photography
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="main-service-container">
+        <!-- Wedding Photography -->
+        <div class="service-container1">
+          <div class="famailyPhotography">
+            <h2>Famaily Photograpy</h2>
+            <h4>3 Hour - $ 899</h4>
+            <ul>
+              <li>1 set of background shots</li>
+              <li>5 sheets</li>
+              <li>1 group photo</li>
+              <li>
+                All graded high-definition negatives on the day of shooting
+                (about 20 photos)
+              </li>
+              <li>Gift: a 8.5*11 inch enlarged photo frame</li>
+              <li>5 developed photos (4*6 inches)</li>
+            </ul>
+          </div>
+          <!-- Studio Photography -->
+          <div class="studioPhotography">
+            <h2>Studio Photograpy</h2>
+            <h4>Business Package A - $188</h4>
+            <ul>
+              <li>1 refined business portrait photo</li>
+              <li>3 HD portraits</li>
+            </ul>
+            <h4>Business Package B - $358</h4>
+            <ul>
+              <li>2 background shots</li>
+              <li>2 refined business portrait photos</li>
+              <li>6 HD portraits</li>
+            </ul>
+            <h4>Business Package C - $888</h4>
+            <ul>
+              <li>
+                1-hour work capture / posing / outside photo shoot, let your
+                customers know more about your work and business
+              </li>
+              <li>5 refined business portrait photos</li>
+              <li>20-30 high-definition portrait photos</li>
+            </ul>
+          </div>
+          <!-- Product photography -->
+          <div class="productPhotography">
+            <h2>Chinese style photography</h2>
+            <h4>Package A - $399</h4>
+            <ul>
+              <li>10 Chinese Style HD Photos</li>
+              <li>Free 10 5*7 inch high quality print photos</li>
+            </ul>
+            <h4>Package B - $699</h4>
+            <ul>
+              <li>20 high-definition photos of Chinese style</li>
+              <li>
+                Complimentary 13*19-inch enlarged photo frame & 20 5*7-inch
+                high-quality printed photos
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- container2 -->
+        <div class="service-container2">
+          <!-- Profesional Videos -->
+          <div class="profesionalVideos">
+            <h2>Profesional Videos</h2>
+            <h4>1 Hour - $ 499</h4>
+            <ul>
+              <li>5 retouched photos</li>
+              <li>all high-resolution images (about 40 photos)</li>
+              <li>5 minute video</li>
+            </ul>
+            <h4>2 Hour - $ 699</h4>
+            <ul>
+              <li>10 retouched photos</li>
+              <li>all high-resolution images (100 photos)</li>
+              <li>15 minute video</li>
+            </ul>
+          </div>
+
+          <!-- Landscapes -->
+          <div class="landscapes">
+            <h2>Landscapes</h2>
+            <h4>All day location, event photoshoot - $ 3099</h4>
+            <ul>
+              <li>Twenty pieces</li>
+              <li>
+                All color-graded high-definition negatives on the day of
+                shooting (200~300 photos)
+              </li>
+              <li>Two enlarged and printed framed photos (13*19 inches)</li>
+
+              <li>
+                Free 1 color hard page printing photo album (10 inches 17*25 cm,
+                20 pages)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- button scorll up -->
+    <button id="scrollBtn">
+      <img src="./pictures/goup.png" alt="" />
+    </button>
+
+    <!-- log in Button contain -->
+    <div class="buttonContainer" id="buttonContainer">
+      <div class="model">
+        <!-- close button -->
+        <span class="close" id="closeButton">&times;</span>
+
+        <!-- sign in form -->
+        <form>
+          <div class="emailContainer">
+            <h2>Singin Form</h2>
+            <label for="email">Email:</label>
+            <span class="required">(required)</span>
+          </div>
+          <input type="email" id="email" name="email" /><br /><br />
+
+          <div class="firstNameContainer">
+            <label for="firstName">Password:</label>
+            <span class="required">(required)</span>
+          </div>
+          <input type="password" id="password" name="password" /><br /><br />
+
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" /><br /><br />
+
+          <div class="lastNameContainer">
+            <label for="lastName">Last Name:</label>
+            <span class="required">(required)</span>
+          </div>
+          <input type="text" id="lastName" name="lastName" /><br /><br />
+
+          <div class="phoneContainer">
+            <label for="phone">Phone Number:</label>
+            <span class="required">(required)</span>
+          </div>
+          <input type="text" id="phone" name="phone" /><br /><br />
+
+          <!-- sumbit and clear button -->
+          <div class="buttonContainer">
+            <button type="button" id="submitButton">Submit</button>
+            <button type="button" id="clearButton">Clear</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="social-icons">
+          <a href="https://www.instagram.com/waikuntain/" target="_blank">
+            <img src="./pictures/instagram.svg" alt="Instagram" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/milo-hsieh-130964202/"
+            target="_blank"
+          >
+            <img src="./pictures/Linkedin_icon.png" alt="LinkedIn" />
+          </a>
+        </div>
+        <div class="copyright">
+          <p>&copy; Milo's website</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./services.js"></script>
+  </body>
+</html>

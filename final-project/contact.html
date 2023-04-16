@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <div class="navigationBar">
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="main.html">Home</a></li>
+          <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a href="services.html">Services</a></li>
+          <li class="nav-item"><a href="aboutme.html">About Me</a></li>
+          <li class="nav-item"><a class="active" href="#">Contact</a></li>
+
+          <!-- sign in and log out button -->
+          <li><button class="signIn" id="signInButton">Sign in</button></li>
+          <li><button class="logOut" id="logOutButton">Log out</button></li>
+          <li><span class="helloSpan"></span></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+      <div class="main-content-img-container">
+        <div class="container">
+          <!-- backgroung image -->
+          <div class="main-img">
+            <img src="/pictures/11.jpg" alt="Contact" />
+          </div>
+          <!-- Content -->
+          <div class="main-content">
+            <div class="line">
+              <div class="title">
+                <h2>Contact</h2>
+              </div>
+              <div class="contactButton">
+                <form id="contactMeForm">
+                  <label for="fullName">Full name:</label>
+                  <input
+                    type="text"
+                    id="contactfullName"
+                    name="fullName"
+                    required
+                  />
+                  <label for="email">Email:</label>
+                  <input type="email" id="contactemail" name="email" required />
+                  <label for="phone">Phone number:</label>
+                  <input type="tel" id="contactphone" name="phone" />
+                  <label for="message">Message:</label>
+                  <textarea id="contactmessage" name="message"></textarea>
+                  <button type="submit" id="contactSendBtn">Send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- button scorll up -->
+    <button id="scrollBtn">
+      <img src="./pictures/goup.png" alt="" />
+    </button>
+
+    <!-- log in Button contain -->
+    <div class="buttonContainer" id="buttonContainer">
+      <div class="model">
+        <!-- close button -->
+        <span class="close" id="closeButton">&times;</span>
+
+        <!-- sign in form -->
+        <form>
+          <div class="emailContainer">
+            <h2>Singin Form</h2>
+            <label for="email">Email:</label>
+            <span class="required">(required)</span>
+          </div>
+          <input type="email" id="email" name="email" /><br /><br />
+
+          <div class="firstNameContainer">
+            <label for="firstName">Password:</label>
+            <span class="required">(required)</span>
+          </div>
+          <input type="password" id="password" name="password" /><br /><br />
+
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" /><br /><br />
+
+          <div class="lastNameContainer">
+            <label for="lastName">Last Name:</label>
+            <span class="required">(required)</span>
+          </div>
+          <input type="text" id="lastName" name="lastName" /><br /><br />
+
+          <div class="phoneContainer">
+            <label for="phone">Phone Number:</label>
+            <span class="required">(required)</span>
+          </div>
+          <input type="text" id="phone" name="phone" /><br /><br />
+
+          <!-- sumbit and clear button -->
+          <div class="buttonContainer">
+            <button type="button" id="submitButton">Submit</button>
+            <button type="button" id="clearButton">Clear</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="social-icons">
+          <a href="https://www.instagram.com/waikuntain/" target="_blank">
+            <img src="./pictures/instagram.svg" alt="Instagram" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/milo-hsieh-130964202/"
+            target="_blank"
+          >
+            <img src="./pictures/Linkedin_icon.png" alt="LinkedIn" />
+          </a>
+        </div>
+        <div class="copyright">
+          <p>&copy; Milo's website</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="aboutme.js"></script>
+  </body>
+</html>

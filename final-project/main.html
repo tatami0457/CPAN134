@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <div class="navigationBar">
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a href="services.html">Services</a></li>
+          <li class="nav-item"><a href="aboutme.html">About Me</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+
+          <!-- sign in and log out button -->
+          <li><button class="signIn" id="signInButton">Sign in</button></li>
+          <li><button class="logOut" id="logOutButton">Log out</button></li>
+          <li><span class="helloSpan"></span></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- main rolling pictures -->
+    <div class="container">
+      <div id="slide">
+        <!-- pic1 -->
+        <div class="item" style="background-image: url(./pictures/1.jpg)">
+          <div class="content">
+            <div class="name">Mt.Hutt</div>
+            <div class="des">Sunrise</div>
+            <button>See more</button>
+          </div>
+        </div>
+        <!-- pic2 -->
+        <div class="item" style="background-image: url(./pictures/2.jpg)">
+          <div class="content">
+            <div class="name">Mt.Hutt</div>
+            <div class="des">sunrise</div>
+            <button>See more</button>
+          </div>
+        </div>
+        <!-- pic3 -->
+        <div class="item" style="background-image: url(./pictures/3.jpg)">
+          <div class="content">
+            <div class="name">Wharariki Beach</div>
+            <div class="des">Sunset</div>
+            <button>See more</button>
+          </div>
+        </div>
+        <!-- pic4 -->
+        <div class="item" style="background-image: url(./pictures/4.jpg)">
+          <div class="content">
+            <div class="name">Janie Seddon Shipwreck</div>
+            <div class="des">Milky Way</div>
+            <button>See more</button>
+          </div>
+        </div>
+        <!-- pic5 -->
+        <div class="item" style="background-image: url(./pictures/5.jpg)">
+          <div class="content">
+            <div class="name">Roys Peak</div>
+            <div class="des">Hiking</div>
+            <button>See more</button>
+          </div>
+        </div>
+        <!-- pic6 -->
+        <div class="item" style="background-image: url(./pictures/6.jpg)">
+          <div class="content">
+            <div class="name">Mt cook</div>
+            <div class="des">Milky way</div>
+            <button>See more</button>
+          </div>
+        </div>
+      </div>
+      <!-- button -->
+      <div class="buttons">
+        <div class="s_button">&lt;</div>
+        <div class="s_button">&gt;</div>
+      </div>
+    </div>
+
+    <!-- log in Button contain -->
+    <div class="buttonContainer" id="buttonContainer">
+      <div class="model">
+        <!-- close button -->
+        <span class="close" id="closeButton">&times;</span>
+
+        <!-- sign in form -->
+        <form>
+          <div class="emailContainer">
+            <h2>Singin Form</h2>
+            <label for="email">Email:</label>
+            <span class="required">(required)</span>
+          </div>
+          <input type="email" id="email" name="email" /><br /><br />
+
+          <div class="firstNameContainer">
+            <label for="firstName">Password:</label>
+            <span class="required">(required)</span>
+          </div>
+          <input type="password" id="password" name="password" /><br /><br />
+
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" /><br /><br />
+
+          <div class="lastNameContainer">
+            <label for="lastName">Last Name:</label>
+            <span class="required">(required)</span>
+          </div>
+          <input type="text" id="lastName" name="lastName" /><br /><br />
+
+          <div class="phoneContainer">
+            <label for="phone">Phone Number:</label>
+            <span class="required">(required)</span>
+          </div>
+          <input type="text" id="phone" name="phone" /><br /><br />
+
+          <!-- sumbit and clear button -->
+          <div class="buttonContainer">
+            <button type="button" id="submitButton">Submit</button>
+            <button type="button" id="clearButton">Clear</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

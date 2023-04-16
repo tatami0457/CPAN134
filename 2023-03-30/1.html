@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    var $ = function (id) {
+      return document.getElementById(id);
+    };
+    function valid() {
+      $("emailMsg").innerHTML = "";
+      $("email2Msg").innerHTML = "";
+      $("firstNameMsg").innerHTML = "";
+
+      if ($("email").value == "") {
+        $("emailMsg").innerHTML = "This field is required";
+      }
+      if ($("email").value == "") {
+        $("email2Msg").innerHTML = "This fieldd is required";
+      } else if ($("email").value !== $("email2").value) {
+        $("email2Msg").innerHTML = "This fieldd is not match the first one";
+      }
+
+      if ($("firstName").value == "") {
+        $("firstNameMsg").innerHTML = "This feild is required";
+      }
+    }
+  </script>
+  <body>
+    <h1>please joing our email list</h1>
+    <table>
+      <tr>
+        <td><label for="email1">Email:</label></td>
+        <td><input id="email" /></td>
+        <td><span id="emailMsg"></span></td>
+      </tr>
+      <tr>
+        <td><label for="email2">Re-Enter the Email:</label></td>
+        <td><input id="email2" /></td>
+        <td><span id="email2Msg"></span></td>
+      </tr>
+      <tr>
+        <td><label for="firstName">First Name:</label></td>
+        <td><input id="firstName" /></td>
+        <td><span id="firstNameMsg"></span></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button onclick="valid()">Join our list</button></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>

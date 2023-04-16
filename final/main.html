@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JJ Coffee House Home page</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+
+  <!-- body should be contained in a div with the id "wrapper" -->
+  <body>
+    <div id="wrapper">
+      <div class="Header">
+        <header>
+          <h1 class="header">JJ Coffee House</h1>
+        </header>
+        <button class="signIn" id="signInButton">Sign in</button>
+        <button class="logOut" id="logOutButton">Log out</button>
+        <span class="helloSpan"></span>
+      </div>
+
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li>
+            <a class="active" href="#">Home</a>
+          </li>
+          <li>
+            <a href="./Menu.html">Menu</a>
+          </li>
+          <li>
+            <a href="./Music.html">Music</a>
+          </li>
+          <li>
+            <a href="./Jobs.html">Jobs</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Content -->
+      <div>
+        <main class="Main" id="Main">
+          <h2>Relax at JJ</h2>
+          <ul>
+            <li>Specialty Coffee and Tea</li>
+            <li>Bagels, Muffins, and Organic Snacks</li>
+            <li>Music and Poetry Readings</li>
+            <li>Open Mic Night</li>
+          </ul>
+        </main>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div id="footer">
+          <p>
+            12345 Route 12 <br />
+            Ellison Bay, WI 12345 <br />
+            888-555-1234
+          </p>
+          <p class="copyright">
+            Copyright @ 2016 JJ Coffee House
+            <br />
+            <a href="MinHung@Hsieh.com">MinHung@Hsieh.com</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- log in Button contain -->
+    <div class="buttonContainer" id="buttonContainer">
+      <div class="model">
+        <span class="close" id="closeButton">&times;</span>
+        <h2>Singin Form</h2>
+
+        <form>
+          <div class="emailContainer">
+            <label for="email">Email:</label>
+            <span class="required">(required)</span>
+          </div>
+          <input type="email" id="email" name="email" /><br /><br />
+
+          <div class="firstNameContainer">
+            <label for="firstName">Password:</label>
+            <span class="required">(required)</span>
+          </div>
+          <input type="password" id="password" name="password" /><br /><br />
+
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" /><br /><br />
+
+          <div class="lastNameContainer">
+            <label for="lastName">Last Name:</label>
+            <span class="required">(required)</span>
+          </div>
+          <input type="text" id="lastName" name="lastName" /><br /><br />
+
+          <div class="phoneContainer">
+            <label for="phone">Phone Number:</label>
+            <span class="required">(required)</span>
+          </div>
+          <input type="text" id="phone" name="phone" /><br /><br />
+
+          <div class="buttonContainer">
+            <button type="button" id="submitButton">Submit</button>
+            <button type="button" id="clearButton">Clear</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
